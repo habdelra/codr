@@ -1,13 +1,11 @@
 .next {
-  float: right;
+  position:absolute;
+  bottom: 100px;
+  right: 100px;
   font-size: 44pt;
   color: $red;
   background: none;
   border: none;
   cursor: pointer;
   outline: none;
-
-  &:after {
-    clear: both;
-  }
 }

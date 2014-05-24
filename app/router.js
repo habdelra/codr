@@ -6,6 +6,7 @@ Router.map(function() {
   this.route('home');
   this.resource('quiz', { path: '/quiz' }, function(){
     this.route('question1');
+    this.route('result');
   });
   this.resource('javascript', { path: '/javascript' }, function(){
     this.resource('reference', { path: '/reference' }, function(){
