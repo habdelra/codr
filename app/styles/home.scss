@@ -1,0 +1,53 @@
+.title-container {
+  padding: 100px;
+  text-align: center;
+
+  .title {
+    @include title-font;
+  }
+
+  .tagline {
+    @include tagline-font;
+  }
+
+  .tag {
+    @include title-tag-font;
+    color: $red;
+  }
+}
+
+.intro-container {
+  padding: 100px;
+  font-size: 44pt;
+  line-height: 53pt;
+  background: $blue;
+  color: white;
+
+  .lead {
+    font-family: $font-header-style;
+  }
+
+  .highlight {
+    color: $red;
+  }
+  .tag {
+    font-family: $font-normal-style;
+  }
+  .name {
+    font-family: $font-header-style;
+  }
+  .next {
+    float: right;
+    font-size: 44pt;
+    color: $red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &:after {
+      clear: both;
+    }
+  }
+}
+

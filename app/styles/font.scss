@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'TradeGothic-Medium';
+  src: url('../webfonts/2AFE4C_0_0.eot');
+  src: url('../webfonts/2AFE4C_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/2AFE4C_0_0.woff') format('woff'),
+       url('../webfonts/2AFE4C_0_0.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'TradeGothic-BoldTwo';
+  src: url('../webfonts/2AFE4C_1_0.eot');
+  src: url('../webfonts/2AFE4C_1_0.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/2AFE4C_1_0.woff') format('woff'),
+       url('../webfonts/2AFE4C_1_0.ttf') format('truetype');
+}
+
+$font-header-style: TradeGothic-BoldTwo, Helvetica, Arial;
+$font-normal-style: TradeGothic-Medium, Helvetica, Arial;
+
+@mixin title-font {
+  font-family: $font-header-style;
+  font-size: 160pt;
+}
+
+@mixin title-tag-font {
+  font-family: $font-normal-style;
+  font-size: 160pt;
+}
+
+@mixin tagline-font {
+  font-family: $font-normal-style;
+  font-size: 22pt;
+}
+
+body {
+  font-family: $font-normal-style;
+  color: $blue;
+}
+
