@@ -1,7 +1,7 @@
 .next {
   position:absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: $app-padding;
+  right: $app-padding;
   font-size: 44pt;
   color: $red;
   background: none;

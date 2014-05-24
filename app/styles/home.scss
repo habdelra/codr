@@ -1,5 +1,6 @@
+
 .title-container {
-  padding: 100px;
+  padding: $app-padding;
   text-align: center;
 
   .title {
@@ -21,7 +22,7 @@
 
 .intro-container {
   position: relative;
-  padding: 100px;
+  padding: $app-padding;
   font-size: 44pt;
   line-height: 53pt;
   background: $blue;

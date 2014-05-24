@@ -1,5 +1,5 @@
 .quiz-result {
-  padding: 100px;
+  padding: $app-padding;
   font-size: 44pt;
   line-height: 53pt;
 
@@ -21,7 +21,7 @@
   font-family: $font-normal-style;
   font-size: 44pt;
   line-height: 53pt;
-  padding: 100px 100px 100px 200px;
+  padding: $app-padding;
 
   .question {
     margin-top: 100px;
