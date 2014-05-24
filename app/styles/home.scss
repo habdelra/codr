@@ -3,15 +3,18 @@
   text-align: center;
 
   .title {
-    @include title-font;
+    font-family: $font-header-style;
+    font-size: 160pt;
   }
 
   .tagline {
-    @include tagline-font;
+    font-family: $font-normal-style;
+    font-size: 22pt;
   }
 
   .tag {
-    @include title-tag-font;
+    font-family: $font-normal-style;
+    font-size: 160pt;
     color: $red;
   }
 }
@@ -35,19 +38,6 @@
   }
   .name {
     font-family: $font-header-style;
-  }
-  .next {
-    float: right;
-    font-size: 44pt;
-    color: $red;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    &:after {
-      clear: both;
-    }
   }
 }
 

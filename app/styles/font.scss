@@ -18,21 +18,6 @@
 $font-header-style: TradeGothic-BoldTwo, Helvetica, Arial;
 $font-normal-style: TradeGothic-Medium, Helvetica, Arial;
 
-@mixin title-font {
-  font-family: $font-header-style;
-  font-size: 160pt;
-}
-
-@mixin title-tag-font {
-  font-family: $font-normal-style;
-  font-size: 160pt;
-}
-
-@mixin tagline-font {
-  font-family: $font-normal-style;
-  font-size: 22pt;
-}
-
 body {
   font-family: $font-normal-style;
   color: $blue;
