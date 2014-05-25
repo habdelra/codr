@@ -4,8 +4,8 @@ export default Ember.Route.extend({
     submit: function(){
       this.transitionTo('quiz.result');
     },
-    startJavascript: function(){
-      this.transitionTo('reference');
+    gotoJavascript: function(){
+      this.transitionTo('reference.events');
     }
   }
 

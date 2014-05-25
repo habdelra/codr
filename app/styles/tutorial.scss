@@ -1,0 +1,153 @@
+.tutorial {
+  height: 100%;
+  font-family: $font-body-style;
+  padding: $app-padding $app-padding 0 $app-padding;
+}
+
+.header-bar {
+  border-bottom: 1px solid $blue;
+
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .codr-logo {
+    display: inline-block;
+    font-size: 32pt;
+    line-height: 46pt;
+    .tag {
+      font-family: $font-normal-style;
+      color: $red;
+    }
+    .name {
+      font-family: $font-header-style;
+    }
+  }
+  .language-menu {
+    float:right;
+    display: inline-block;
+    line-height: 46pt;
+
+    .language {
+      min-width: 125px;
+      color: $blue;
+      font-size: 18pt;
+      @include nav-menu-buttons;
+    }
+
+  }
+}
+
+.module-nav-bar {
+  margin-top: 36px;
+}
+
+.module {
+  color: $red;
+  font-size: 18pt;
+  line-height: 25pt;
+  @include nav-menu-buttons;
+  &:first-of-type {
+    min-width: 185px;
+  }
+
+}
+
+.topic {
+  @include nav-menu-buttons;
+  width: 25%;
+  margin-right: -4px;
+  font-size: 18pt;
+  line-height: 25pt;
+  border-top: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  border-right: 2px solid $blue;
+  background: $light-blue;
+  color: white;
+  &.selected {
+    background: $blue;
+  }
+  &:first-of-type {
+    border-left: 2px solid $blue;
+  }
+}
+
+.tutorial-container {
+  height: 75%;
+  border-right: 1px solid $blue;
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+.topic-items {
+  height: 100%;
+  background: $lighter-blue;
+  float:left;
+  width: 312px;
+  border-left: 1px solid $blue;
+  border-right: 2px solid $blue;
+
+  .topic-item {
+    border-bottom: 1px solid $blue;
+    min-height: 105px;
+    padding: 25px;
+    &:last-of-type {
+      border-bottom: none;
+    }
+    &.selected {
+      background: white;
+    }
+  }
+}
+.stage {
+  margin-left: 315px;
+}
+
+.how-it-works {
+  padding: 25px 22px;
+  font-size: 16pt;
+  line-height: 22pt;
+  border-bottom: 1px solid $blue;
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .header {
+    color: $light-red;
+    font-family: $font-header-style;
+    font-size: 18pt;
+    line-height: 23pt;
+  }
+}
+.code {
+  padding: 25px 22px;
+  color: $dark-gray;
+  font-size: 15pt;
+  line-height: 20pt;
+}
+
+.codr-footer, .scratch-footer {
+  text-align: center;
+  color: white;
+  background: $light-blue-opaque;
+  font-family: $font-header-style;
+  font-size: 32pt;
+  line-height: 40pt;
+  border: 2px solid $blue;
+  margin-bottom: $app-padding;
+}
+.codr-footer {
+  background: $light-red;
+  .tag {
+    font-family: $font-normal-style;
+  }
+}
+.scratch-footer {
+  width: 311px;
+  float:left;
+}

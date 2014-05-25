@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'TradeGothic-Light';
+  src: url('../webfonts/2AFE92_0_0.eot');
+  src: url('../webfonts/2AFE92_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/2AFE92_0_0.woff') format('woff'),
+       url('../webfonts/2AFE92_0_0.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'TradeGothic-Medium';
   src: url('../webfonts/2AFE4C_0_0.eot');
   src: url('../webfonts/2AFE4C_0_0.eot?#iefix') format('embedded-opentype'),
@@ -17,6 +25,7 @@
 
 $font-header-style: TradeGothic-BoldTwo, Helvetica, Arial;
 $font-normal-style: TradeGothic-Medium, Helvetica, Arial;
+$font-body-style: TradeGothic-Light, Helvetica, Arial;
 
 body {
   font-family: $font-normal-style;
