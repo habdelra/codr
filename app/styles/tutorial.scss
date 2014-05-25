@@ -62,6 +62,9 @@
 
 .topic {
   @include nav-menu-buttons;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
   width: 25%;
   margin-right: -4px;
   font-size: 18pt;

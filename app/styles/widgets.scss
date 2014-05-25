@@ -1,11 +1,12 @@
 @mixin nav-menu-buttons {
+  text-decoration: none;
   margin:0;
   outline: none;
   font-family: $font-body-style;
   background: none;
   border: none;
   cursor: pointer;
-  &:active, &.selected {
+  &:active, &.active, &.selected {
     cursor: default;
     font-family: $font-header-style;
   }
