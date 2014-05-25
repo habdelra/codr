@@ -10,7 +10,9 @@ Router.map(function() {
   });
   this.resource('javascript', { path: '/javascript' }, function(){
     this.resource('reference', { path: '/reference' }, function(){
-      this.route('events');
+      this.resource('topic-items', { path: '/topic-items' }, function(){
+        this.resource('topic-item', { path: '/:topic_item_id' });
+      });
       this.route('motion');
       this.route('control');
       this.route('operators');

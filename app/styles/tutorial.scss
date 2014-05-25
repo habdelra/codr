@@ -98,13 +98,14 @@
   border-right: 2px solid $blue;
 
   .topic-item {
+    display:block;
     border-bottom: 1px solid $blue;
     min-height: 105px;
     padding: 25px;
     &:last-of-type {
       border-bottom: none;
     }
-    &.selected {
+    &.active {
       background: white;
     }
   }

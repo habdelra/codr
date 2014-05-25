@@ -1,0 +1,33 @@
+<div class="topic-nav-bar">
+  <button class="topic selected" aria-label="Currently viewing events topic" disabled>events</button>
+  <button class="topic" aria-label="view motion topic" {{action "gotoMotion"}}>motion</button>
+  <button class="topic" aria-label="view control topic" {{action "gotoControl"}}>control</button>
+  <button class="topic" aria-label="view operators topic" {{action "gotoOperators"}}>operators</button>
+</div>
+
+<div class="tutorial-container">
+  <div class="topic-items">
+    {{#each item in topicItems }}
+      {{#link-to 'topic-item' item class="topic-item"}}
+        <img {{ bind-attr src=item.imageUrl alt=item.title }}/>
+      {{/link-to}}
+    {{/each}}
+  </div>
+  <div class="stage">
+    <div class="how-it-works">
+      {{ partial topicItem.instructionPartial }}
+    </div>
+    <div class="code">
+      {{ partial topicItem.examplePartial }}
+    </div>
+  </div>
+</div>
+
+<div class="scratch-footer">
+  scratch
+</div>
+<div class="codr-footer">
+  {{partial 'codr-logo'}}
+</div>
+
+
