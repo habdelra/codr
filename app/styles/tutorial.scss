@@ -13,6 +13,12 @@
     clear: both;
   }
   .codr-logo {
+    background: none;
+    margin: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $blue;
     display: inline-block;
     font-size: 32pt;
     line-height: 46pt;
