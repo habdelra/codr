@@ -9,7 +9,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  &:active, &.active {
+  &.active {
     cursor: default;
     font-family: $font-header-style;
   }
