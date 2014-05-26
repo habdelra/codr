@@ -1,22 +1,17 @@
 var Module = DS.Model.extend({
   title: DS.attr('string'),
-  topicItems: DS.hasMany('topic-item', { async: true })
+  topics: DS.hasMany('topic', { async: true })
 });
 
 Module.reopenClass({
   FIXTURES: [{
     id: 1,
-    title: 'events',
-    topicItems: [1, 2]
+    title: 'block references',
+    topics: [ 1, 2, 3, 4 ]
   }, {
     id: 2,
-    title: 'motion'
-  }, {
-    id: 3,
-    title: 'control'
-  }, {
-    id: 4,
-    title: 'operators'
+    title: 'examples',
+    topics: [ ]
   }]
 });
 

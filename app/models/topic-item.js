@@ -18,6 +18,12 @@ TopicItem.reopenClass({
     instructionPartial: 'content/todo',
     examplePartial: 'content/todo',
     imageUrl: 'images/Scratch_blocks/Events/2.0_When_()_Key_Pressed.png'
+  }, {
+    id: 3,
+    title: 'Sprite Click Scratch Event Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Events/2.0_When_This_Sprite_Clicked.png'
   }]
 });
 

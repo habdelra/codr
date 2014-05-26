@@ -1,5 +1,5 @@
 export default Ember.Route.extend({
-  afterModel: function() {
-    this.transitionTo('topic-items');
+  afterModel: function(){
+    this.transitionTo('topics');
   }
 });

@@ -1,3 +1,3 @@
 export default Ember.Controller.extend({
-  sections: Ember.computed.alias('content')
+  topics: Ember.computed.alias('content')
 });

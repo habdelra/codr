@@ -1,0 +1,14 @@
+<div class="topic-nav-bar">
+  {{#each topics}}
+    {{#link-to 'topic' this class="topic"}}{{title}}{{/link-to}}
+  {{/each}}
+</div>
+
+  {{outlet}}
+
+  <div class="scratch-footer">
+    scratch
+  </div>
+  <div class="codr-footer">
+    {{partial 'codr-logo'}}
+  </div>

@@ -1,10 +1,11 @@
 export default Ember.Route.extend({
   model: function(){
-    return this.store.find('section');
+    var module = this.modelFor('module');
+    return module.get('topics');
   },
   afterModel: function(model) {
     if (model.get('length')) {
-      this.transitionTo('section', model.get('firstObject'));
+      this.transitionTo('topic', model.get('firstObject'));
     }
   }
 });

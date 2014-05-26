@@ -5,7 +5,7 @@ export default Ember.Route.extend({
       this.transitionTo('quiz.result');
     },
     gotoJavascript: function(){
-      this.transitionTo('reference.events');
+      this.transitionTo('javascript');
     }
   }
 
