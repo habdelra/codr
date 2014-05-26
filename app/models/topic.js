@@ -10,7 +10,8 @@ Topic.reopenClass({
     topicItems: [1, 2, 3]
   }, {
     id: 2,
-    title: 'motion'
+    title: 'motion',
+    topicItems: [4, 5, 6, 7, 8]
   }, {
     id: 3,
     title: 'control'

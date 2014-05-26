@@ -83,7 +83,6 @@
 }
 
 .tutorial-container {
-  height: 75%;
   border-right: 1px solid $blue;
   &:after {
     display: block;
@@ -93,7 +92,7 @@
 }
 
 .topic-items {
-  height: 100%;
+  min-height: 600px;
   background: $lighter-blue;
   float:left;
   width: 312px;
@@ -160,4 +159,9 @@
 .scratch-footer {
   width: 311px;
   float:left;
+}
+
+.scratch-img-step {
+  display: block;
+  margin-bottom: -3px;
 }

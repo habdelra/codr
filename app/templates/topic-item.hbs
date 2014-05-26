@@ -1,8 +1,8 @@
 <div class="tutorial-container">
   <div class="topic-items">
-    {{#each topicItems }}
-      {{#link-to 'topic-item' this class="topic-item"}}
-        <img {{ bind-attr src=imageUrl alt=title }}/>
+    {{#each item in topicItems }}
+      {{#link-to 'topic-item' item class="topic-item"}}
+        {{image-list item}}
       {{/link-to}}
     {{/each}}
   </div>
