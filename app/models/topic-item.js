@@ -18,7 +18,8 @@ TopicItem.reopenClass({
     title: 'Green Flag Scratch Event Block',
     instructionPartial: 'content/topic-items/event-green-flag-how-it-works',
     examplePartial: 'content/topic-items/event-green-flag-code',
-    imageUrl: 'images/Scratch_blocks/Events/2.0_When_Green_Flag_Clicked.png'
+    imageUrl: 'images/Scratch_blocks/Events/2.0_When_Green_Flag_Clicked.png',
+    labUrl: 'http://jsbin.com/poqud/1/embed?js,console,output'
   }, {
     id: 2,
     title: 'Space Key Press Scratch Event Block',
@@ -31,7 +32,8 @@ TopicItem.reopenClass({
     title: 'Sprite Click Scratch Event Block',
     instructionPartial: 'content/topic-items/event-sprite-click-how-it-works',
     examplePartial: 'content/topic-items/event-sprite-click-code',
-    imageUrl: 'images/Scratch_blocks/Events/2.0_When_This_Sprite_Clicked.png'
+    imageUrl: 'images/Scratch_blocks/Events/2.0_When_This_Sprite_Clicked.png',
+    labUrl: 'http://jsbin.com/hucag/1/embed?js,console,output'
   }, {
     id: 4,
     title: 'Move Right Scratch Motion Blocks',

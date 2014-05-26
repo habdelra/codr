@@ -14,6 +14,7 @@
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.1",
 
     "ember-fastclick": "git@github.com:JamesHight/emberjs-touch.git",
+    "ember-console-utilities": "git://github.com/ebryn/ember-console-utils",
     "ic-modal": "0.1.1",
     "ic-styled": "1.1.6"
   }

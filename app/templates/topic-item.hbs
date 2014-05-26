@@ -17,12 +17,13 @@
         {{/ic-modal-trigger}}
 
         {{#ic-modal id="try-it"}}
-        {{#ic-modal-title}}
-          <span class="try-it-title">
-            <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
-          </span>
-        {{/ic-modal-title}}
-        <iframe class="try-it-frame" {{ bind-attr src=topicItem.labUrl }}/>
+          {{#ic-modal-title}}
+            <span class="try-it-title">
+              <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
+            </span>
+          {{/ic-modal-title}}
+          {{view 'lab-frame'}}
+          <!-- <iframe class="try-it-frame" {{ bind-attr src=topicItem.labUrl }}/> -->
         {{/ic-modal}}
       {{/if}}
 
