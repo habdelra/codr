@@ -8,23 +8,18 @@ Router.map(function() {
     this.route('question1');
     this.route('result');
   });
+  //TODO: convert the javascript resource to a generic language resource
   this.resource('javascript', { path: '/javascript' }, function(){
-    this.resource('reference', { path: '/reference' }, function(){
-      this.resource('modules', { path: '/modules' }, function(){
-        this.resource('module', { path: '/:module_id' }, function(){
-          this.resource('topic-items', { path: '/topic-items' }, function(){
-            this.resource('topic-item', { path: '/:topic_item_id' });
+    this.resource('sections', { path: '/sections' }, function(){
+      this.resource('section', { path: '/:section_id' }, function() {
+        this.resource('modules', { path: '/modules' }, function(){
+          this.resource('module', { path: '/:module_id' }, function(){
+            this.resource('topic-items', { path: '/topic-items' }, function(){
+              this.resource('topic-item', { path: '/:topic_item_id' });
+            });
           });
         });
       });
-      this.route('motion');
-      this.route('control');
-      this.route('operators');
-    });
-    this.resource('examples', { path: '/examples' }, function(){
-      this.route('example1');
-      this.route('example2');
-      this.route('example3');
     });
   });
 });

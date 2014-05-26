@@ -1,6 +1,7 @@
 export default Ember.Route.extend({
   model: function(){
-    return this.store.find('module');
+    var section = this.modelFor('section');
+    return section.get('modules');
   },
   afterModel: function(model) {
     if (model.get('length')) {

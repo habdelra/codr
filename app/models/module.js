@@ -1,6 +1,6 @@
 var Module = DS.Model.extend({
   title: DS.attr('string'),
-  topicItems: DS.hasMany('topic-item', { async: true})
+  topicItems: DS.hasMany('topic-item', { async: true })
 });
 
 Module.reopenClass({

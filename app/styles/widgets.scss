@@ -1,4 +1,7 @@
 @mixin nav-menu-buttons {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
   text-decoration: none;
   margin:0;
   outline: none;
@@ -6,7 +9,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  &:active, &.active, &.selected {
+  &:active, &.active {
     cursor: default;
     font-family: $font-header-style;
   }
