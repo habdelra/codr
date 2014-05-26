@@ -4,7 +4,9 @@
   {{/each}}
 </div>
 
-  {{outlet}}
+  <div {{bind-attr class="topic.title :topic-container"}}>
+    {{outlet}}
+  </div>
 
   <div class="scratch-footer">
     scratch

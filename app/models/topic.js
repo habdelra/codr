@@ -15,11 +15,11 @@ Topic.reopenClass({
   }, {
     id: 3,
     title: 'control',
-    topicItems: [9999]
+    topicItems: [9, 10, 11, 12]
   }, {
     id: 4,
     title: 'operators',
-    topicItems: [9999]
+    topicItems: [13, 14, 15, 16, 17, 18]
   }]
 });
 

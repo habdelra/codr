@@ -64,6 +64,66 @@ TopicItem.reopenClass({
     examplePartial: 'content/todo',
     imageUrl: 'images/Scratch_blocks/Motion/2.0_Turn_()_Degrees.png',
     imageStyle: '*|height:25px; overflow:hidden;'
+  }, {
+    id: 9,
+    title: 'Loop Forever Scratch Control Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Control/2.0_Forever.png'
+  }, {
+    id: 10,
+    title: 'If/Else Scratch Control Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Control/2.0_If_()_Then,_Else.png'
+  }, {
+    id: 11,
+    title: 'Repeat Scratch Control Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Control/2.0_Repeat_().png'
+  }, {
+    id: 12,
+    title: 'Wait Scratch Control Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Control/2.0_Wait_()_Secs.png'
+  }, {
+    id: 13,
+    title: 'Equals Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_=_().png'
+  }, {
+    id: 14,
+    title: 'And Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_and_().png'
+  }, {
+    id: 15,
+    title: 'Greater Than Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Greater_Than_().png'
+  }, {
+    id: 16,
+    title: 'Less Than Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Less_Than_().png'
+  }, {
+    id: 17,
+    title: 'Or Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_or_().png'
+  }, {
+    id: 18,
+    title: 'Not Scratch Operator Block',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo',
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_Not_().png'
   }]
 });
 
