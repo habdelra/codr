@@ -4,6 +4,7 @@ var TopicItem = DS.Model.extend({
   examplePartial: DS.attr('string'),
   imageUrl: DS.attr('string'),
   imageStyle: DS.attr('string'),
+  labUrl: DS.attr('string')
 });
 
 TopicItem.reopenClass({
@@ -23,7 +24,8 @@ TopicItem.reopenClass({
     title: 'Space Key Press Scratch Event Block',
     instructionPartial: 'content/topic-items/event-space-key-how-it-works',
     examplePartial: 'content/topic-items/event-space-key-code',
-    imageUrl: 'images/Scratch_blocks/Events/2.0_When_()_Key_Pressed.png'
+    imageUrl: 'images/Scratch_blocks/Events/2.0_When_()_Key_Pressed.png',
+    labUrl: 'http://jsbin.com/yafek/2/embed?js,console,output'
   }, {
     id: 3,
     title: 'Sprite Click Scratch Event Block',

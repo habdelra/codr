@@ -13,6 +13,8 @@
     "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.1",
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.1",
 
-    "ember-fastclick": "git@github.com:JamesHight/emberjs-touch.git"
+    "ember-fastclick": "git@github.com:JamesHight/emberjs-touch.git",
+    "ic-modal": "0.1.1",
+    "ic-styled": "1.1.6"
   }
 }

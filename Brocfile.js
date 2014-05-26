@@ -11,6 +11,8 @@ var app = new EmberApp({
 // Use this to add additional libraries to the generated output files.
 app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/ember-fastclick/lib/ember-fastclick.js');
+app.import('vendor/ic-styled/main.js');
+app.import('vendor/ic-modal/dist/globals/main.js');
 
 // If the library that you are including contains AMD or ES6 modules that
 // you would like to import into your application please specify an

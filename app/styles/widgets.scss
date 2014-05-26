@@ -27,5 +27,28 @@
   cursor: pointer;
   outline: none;
 }
+.ic-modal-trigger.ic-modal-close {
+  color: red;
+}
 
+ic-modal {
+  background-color: rgba(255,255,255,0.6);
+}
 
+ic-modal-main {
+  margin-top: 150px;
+}
+
+.try-it-title {
+  font-family: $font-header-style;
+  color: $blue;
+  font-size: 44pt;
+  line-height: 53pt;
+  .text {
+    font-family: $font-normal-style;
+  }
+  .tag {
+    color: red;
+    font-family: $font-normal-style;
+  }
+}
