@@ -8,6 +8,11 @@ var TopicItem = DS.Model.extend({
 
 TopicItem.reopenClass({
   FIXTURES: [{
+    id: 9999,
+    title: 'Place holder topic item',
+    instructionPartial: 'content/todo',
+    examplePartial: 'content/todo'
+  }, {
     id: 1,
     title: 'Green Flag Scratch Event Block',
     instructionPartial: 'content/topic-items/event-green-flag-how-it-works',

@@ -1,4 +1,6 @@
 export default Ember.Handlebars.makeBoundHelper(function(topicItem){
+  if (!topicItem.get('imageUrl')) return;
+
   var imageUrls = topicItem.get('imageUrl').split('|');
   var imageStyle = (topicItem.get('imageStyle') || '').split('|');
   var imageHtml = '';

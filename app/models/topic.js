@@ -14,10 +14,12 @@ Topic.reopenClass({
     topicItems: [4, 5, 6, 7, 8]
   }, {
     id: 3,
-    title: 'control'
+    title: 'control',
+    topicItems: [9999]
   }, {
     id: 4,
-    title: 'operators'
+    title: 'operators',
+    topicItems: [9999]
   }]
 });
 
