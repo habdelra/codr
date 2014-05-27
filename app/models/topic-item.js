@@ -26,7 +26,7 @@ TopicItem.reopenClass({
     instructionPartial: 'content/topic-items/event-space-key-how-it-works',
     examplePartial: 'content/topic-items/event-space-key-code',
     imageUrl: 'images/Scratch_blocks/Events/2.0_When_()_Key_Pressed.png',
-    labUrl: 'http://jsbin.com/yafek/2/embed?js,console,output'
+    labUrl: 'http://jsbin.com/yafek/3/embed?js,console,output'
   }, {
     id: 3,
     title: 'Sprite Click Scratch Event Block',

@@ -1,7 +1,7 @@
 .tutorial {
   height: 100%;
   font-family: $font-body-style;
-  padding: $app-padding $app-padding 0 $app-padding;
+  padding: 20px;
 }
 
 .header-bar {
@@ -39,7 +39,7 @@
     .language {
       min-width: 125px;
       color: $blue;
-      padding: 0;
+      padding: 20px 0 0 0;
       font-size: 18pt;
       @include nav-menu-buttons;
     }
@@ -48,7 +48,7 @@
 }
 
 .module-nav-bar {
-  margin-top: 36px;
+  margin-top: 20px;
   margin-left: -7px;
 }
 
@@ -75,7 +75,6 @@
   @include nav-menu-buttons;
   text-align: center;
   display: inline-block;
-  box-sizing: border-box;
   width: 25%;
   margin-right: -4px;
   font-size: 18pt;
