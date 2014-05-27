@@ -42,8 +42,8 @@
       }
       .answer-input:checked + label:before {
         position:absolute;
-        left: -2px;
-        top: -1px;
+        left: -1px;
+        top: 1px;
         content: '✓';
       }
 
