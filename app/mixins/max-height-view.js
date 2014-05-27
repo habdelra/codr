@@ -1,5 +1,22 @@
 export default Ember.Mixin.create({
 
+  init: function() {
+    this._super();
+    var view = this;
+
+    var resizeHandler = function() {
+      view.rerender();
+    };
+
+    this.set('resizeHandler', resizeHandler);
+    $(window).bind('resize', this.get('resizeHandler'));
+  },
+
+  willDestroy: function() {
+    this._super();
+    $(window).unbind('resize', this.get('resizeHandler'));
+  },
+
   didInsertElement: function(){
     this._super();
     var topPadding = parseInt(this.$().css('padding-top').replace('px', ''), 10);
