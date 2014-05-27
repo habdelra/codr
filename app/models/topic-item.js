@@ -39,35 +39,40 @@ TopicItem.reopenClass({
     title: 'Move Right Scratch Motion Blocks',
     instructionPartial: 'content/topic-items/motion-right-how-it-works',
     examplePartial: 'content/topic-items/motion-right-code',
-    imageUrl: 'images/Scratch_blocks/Motion/2.0_Point_in_Direction_().png|images/Scratch_blocks/Motion/2.0_Move_()_Steps.png'
+    imageUrl: 'images/Scratch_blocks/Motion/2.0_Point_in_Direction_().png|images/Scratch_blocks/Motion/2.0_Move_()_Steps.png',
+    labUrl: 'http://jsbin.com/voqus/2/embed?js,output'
   }, {
     id: 5,
     title: 'Move Down Scratch Motion Blocks',
     instructionPartial: 'content/topic-items/motion-down-how-it-works',
     examplePartial: 'content/topic-items/motion-down-code',
     imageUrl: 'images/Scratch_blocks/Motion/Steps_180.png|images/Scratch_blocks/Motion/2.0_Move_()_Steps.png',
-    imageStyle: 'width:150px; height:33px; margin-left:-5px; margin-bottom:-8px|*'
+    imageStyle: 'width:150px; height:33px; margin-left:-5px; margin-bottom:-8px|*',
+    labUrl: 'http://jsbin.com/calug/2/embed?js,output'
   }, {
     id: 6,
     title: 'Move Left Scratch Motion Blocks',
     instructionPartial: 'content/topic-items/motion-left-how-it-works',
     examplePartial: 'content/topic-items/motion-left-code',
     imageUrl: 'images/Scratch_blocks/Motion/Steps_-90.png|images/Scratch_blocks/Motion/2.0_Move_()_Steps.png',
-    imageStyle: 'width:154px; height:36px; margin-left:-7px; margin-bottom:-9px|*'
+    imageStyle: 'width:154px; height:36px; margin-left:-7px; margin-bottom:-9px|*',
+    labUrl: 'http://jsbin.com/vehiji/2/embed?js,output'
   }, {
     id: 7,
-    title: 'Move Right Scratch Motion Blocks',
-    instructionPartial: 'content/topic-items/motion-right-how-it-works',
-    examplePartial: 'content/topic-items/motion-right-code',
+    title: 'Move Up Scratch Motion Blocks',
+    instructionPartial: 'content/topic-items/motion-up-how-it-works',
+    examplePartial: 'content/topic-items/motion-up-code',
     imageUrl: 'images/Scratch_blocks/Motion/Steps_0.png|images/Scratch_blocks/Motion/2.0_Move_()_Steps.png',
-    imageStyle: 'width:141px; height:33px; margin-left:-7px; margin-bottom:-8px|*'
+    imageStyle: 'width:141px; height:33px; margin-left:-7px; margin-bottom:-8px|*',
+    labUrl: 'http://jsbin.com/sufeg/2/embed?js,output'
   }, {
     id: 8,
     title: 'Rotate Scratch Motion Blocks',
     instructionPartial: 'content/topic-items/motion-rotate-how-it-works',
     examplePartial: 'content/topic-items/motion-rotate-code',
     imageUrl: 'images/Scratch_blocks/Motion/2.0_Turn_()_Degrees.png',
-    imageStyle: '*|height:25px; overflow:hidden;'
+    imageStyle: '*|height:25px; overflow:hidden;',
+    labUrl: 'http://jsbin.com/hayey/3/embed?js,output'
   }, {
     id: 9,
     title: 'Loop Forever Scratch Control Block',
@@ -79,55 +84,64 @@ TopicItem.reopenClass({
     title: 'If/Else Scratch Control Block',
     instructionPartial: 'content/topic-items/control-if-else-how-it-works',
     examplePartial: 'content/topic-items/control-if-else-code',
-    imageUrl: 'images/Scratch_blocks/Control/2.0_If_()_Then,_Else.png'
+    imageUrl: 'images/Scratch_blocks/Control/2.0_If_()_Then,_Else.png',
+    labUrl: 'http://jsbin.com/sovay/3/embed?js,console'
   }, {
     id: 11,
     title: 'Repeat Scratch Control Block',
     instructionPartial: 'content/topic-items/control-repeat-how-it-works',
     examplePartial: 'content/topic-items/control-repeat-code',
-    imageUrl: 'images/Scratch_blocks/Control/2.0_Repeat_().png'
+    imageUrl: 'images/Scratch_blocks/Control/2.0_Repeat_().png',
+    labUrl: 'http://jsbin.com/mozux/1/embed?js,console'
   }, {
     id: 12,
     title: 'Wait Scratch Control Block',
     instructionPartial: 'content/topic-items/control-wait-how-it-works',
     examplePartial: 'content/topic-items/control-wait-code',
-    imageUrl: 'images/Scratch_blocks/Control/2.0_Wait_()_Secs.png'
+    imageUrl: 'images/Scratch_blocks/Control/2.0_Wait_()_Secs.png',
+    labUrl: 'http://jsbin.com/mexet/2/embed?js,console'
   }, {
     id: 13,
     title: 'Equals Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-equals-how-it-works',
     examplePartial: 'content/topic-items/operator-equals-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_=_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_=_().png',
+    labUrl: 'http://jsbin.com/godix/2/embed?js,console'
   }, {
     id: 14,
     title: 'And Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-and-how-it-works',
     examplePartial: 'content/topic-items/operator-and-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_and_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_and_().png',
+    labUrl: 'http://jsbin.com/goqer/2/embed?js,console'
   }, {
     id: 15,
     title: 'Greater Than Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-greater-than-how-it-works',
     examplePartial: 'content/topic-items/operator-greater-than-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Greater_Than_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Greater_Than_().png',
+    labUrl: 'http://jsbin.com/bedoy/2/embed?js,console'
   }, {
     id: 16,
     title: 'Less Than Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-less-than-how-it-works',
     examplePartial: 'content/topic-items/operator-less-than-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Less_Than_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_is_Less_Than_().png',
+    labUrl: 'http://jsbin.com/xofav/2/embed?js,console'
   }, {
     id: 17,
     title: 'Or Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-or-how-it-works',
     examplePartial: 'content/topic-items/operator-or-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_or_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_()_or_().png',
+    labUrl: 'http://jsbin.com/fikap/1/embed?js,console'
   }, {
     id: 18,
     title: 'Not Scratch Operator Block',
     instructionPartial: 'content/topic-items/operator-not-how-it-works',
     examplePartial: 'content/topic-items/operator-not-code',
-    imageUrl: 'images/Scratch_blocks/Operators/2.0_Not_().png'
+    imageUrl: 'images/Scratch_blocks/Operators/2.0_Not_().png',
+    labUrl: 'http://jsbin.com/bavuj/2/embed?js,console'
   }]
 });
 
