@@ -20,6 +20,18 @@ Topic.reopenClass({
     id: 4,
     title: 'operators',
     topicItems: [13, 14, 15, 16, 17, 18]
+  }, {
+    id: 5,
+    title: 'example 1',
+    topicItems: [9999]
+  }, {
+    id: 6,
+    title: 'example 2',
+    topicItems: [9999]
+  }, {
+    id: 7,
+    title: 'example 3',
+    topicItems: [9999]
   }]
 });
 

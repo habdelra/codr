@@ -11,7 +11,7 @@ Module.reopenClass({
   }, {
     id: 2,
     title: 'examples',
-    topics: [ ]
+    topics: [5, 6, 7]
   }]
 });
 

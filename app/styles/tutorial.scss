@@ -63,6 +63,14 @@
 
 }
 
+.module-container.references .topic {
+  width: 25%;
+}
+
+.module-container.examples .topic {
+  width: 33.33%;
+}
+
 .topic {
   @include nav-menu-buttons;
   text-align: center;
