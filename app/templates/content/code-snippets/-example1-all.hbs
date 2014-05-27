@@ -1,0 +1,18 @@
+<pre>
+$(document).ready(function() {
+  var $sprite = $('.sprite');
+  var xOffset = $sprite.position().left;
+  var yOffset = $sprite.position().top;
+  var i;
+  for (i = 0; i < 4; i++) {
+    xOffset += 50;
+    yOffset -= 50;
+    $sprite.animate({
+      left: xOffset
+    })
+    .animate({
+      top: yOffset
+    });
+  }
+});
+</pre>

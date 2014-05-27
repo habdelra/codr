@@ -17,6 +17,9 @@ Router.map(function() {
             this.resource('topic-items', { path: '/topic-items' }, function(){
               this.resource('topic-item', { path: '/:topic_item_id' });
             });
+            this.resource('code-snippets', { path: '/code-snippets' }, function(){
+              this.resource('code-snippet', { path: '/:code_snippet_id' });
+            });
           });
         });
       });

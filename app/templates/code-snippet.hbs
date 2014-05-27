@@ -1,17 +1,17 @@
-<div class="tutorial-container topic-items-topic-type">
-  <div class="topic-items">
-    {{#each item in topicItems }}
-      {{#link-to 'topic-item' item class="topic-item"}}
-        {{image-list item}}
+<div class="tutorial-container code-snippets-topic-type">
+  <div class="code-snippets">
+    {{#each snippet in codeSnippets }}
+      {{#link-to 'code-snippet' snippet class="code-snippet"}}
+        {{image-list snippet}}
       {{/link-to}}
     {{/each}}
   </div>
   <div class="stage">
     <div class="how-it-works">
-      {{ partial topicItem.instructionPartial }}
+      {{ partial codeSnippet.instructionPartial }}
     </div>
     <div class="code">
-      {{#if topicItem.labUrl}}
+      {{#if codeSnippet.labUrl}}
         {{#ic-modal-trigger controls="try-it" class="try-it-button"}}
           Try it out
         {{/ic-modal-trigger}}
@@ -22,11 +22,12 @@
               <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
             </span>
           {{/ic-modal-title}}
-          {{view 'topic-item-lab-frame'}}
+          {{view 'code-snippet-lab-frame'}}
         {{/ic-modal}}
       {{/if}}
 
-      {{ partial topicItem.examplePartial }}
+      {{ partial codeSnippet.examplePartial }}
     </div>
   </div>
 </div>
+

@@ -1,8 +1,8 @@
-export default Ember.Handlebars.makeBoundHelper(function(topicItem){
-  if (!topicItem.get('imageUrl')) return;
+export default Ember.Handlebars.makeBoundHelper(function(item){
+  if (!item.get('imageUrl')) return;
 
-  var imageUrls = topicItem.get('imageUrl').split('|');
-  var imageStyle = (topicItem.get('imageStyle') || '').split('|');
+  var imageUrls = item.get('imageUrl').split('|');
+  var imageStyle = (item.get('imageStyle') || '').split('|');
   var imageHtml = '';
   var i;
   var style;
@@ -17,9 +17,9 @@ export default Ember.Handlebars.makeBoundHelper(function(topicItem){
       style = imageStyle[i];
     }
     if (style && style !== '*') {
-      imageHtml += '<img style="' + style + '" class="scratch-img-step" src="' + imageUrls[i] + '" alt="' + topicItem.get('title') + ' (step ' + i + ')"/>';
+      imageHtml += '<img style="' + style + '" class="scratch-img-step" src="' + imageUrls[i] + '" alt="' + item.get('title') + ' (step ' + i + ')"/>';
     } else {
-      imageHtml += '<img class="scratch-img-step" src="' + imageUrls[i] + '" alt="' + topicItem.get('title') + ' (step ' + i + ')"/>';
+      imageHtml += '<img class="scratch-img-step" src="' + imageUrls[i] + '" alt="' + item.get('title') + ' (step ' + i + ')"/>';
     }
     imageHtml += '</div>';
   }

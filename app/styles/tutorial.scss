@@ -111,7 +111,7 @@
   min-height: 640px;
 }
 
-.topic-items {
+.code-snippets, .topic-items {
   min-height: 600px;
   background: $lighter-blue;
   float:left;
@@ -133,11 +133,42 @@
   }
 }
 
+div.code-snippets {
+  background: none;
+  width: 315px;
+  .code-snippet {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 25px;
+
+    &:first-of-type {
+      padding-top: 25px;
+    }
+    &:last-of-type {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.code-snippets-topic-type {
+  pre {
+    margin:0;
+    color: $medium-gray;
+
+    &.highlight {
+      color: $dark-gray;
+    }
+  }
+}
+
 .topic-container.operators .topic-items .topic-item {
   min-height: 37px;
 }
 .stage {
   margin-left: 251px;
+}
+.code-snippets-topic-type .stage {
+  margin-left: 316px;
 }
 
 .how-it-works {
@@ -184,6 +215,9 @@
 .scratch-footer {
   width: 249px;
   float:left;
+  .module-container.examples & {
+    width: 314px;
+  }
 }
 
 .scratch-img-step {
