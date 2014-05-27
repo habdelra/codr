@@ -32,6 +32,10 @@
   outline: none;
 }
 
+.ic-modal-trigger.ic-modal-close:focus {
+  text-shadow: none;
+}
+
 .try-it-frame {
   width: 100%;
   height: 400px;
