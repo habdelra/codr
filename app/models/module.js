@@ -10,7 +10,7 @@ Module.reopenClass({
     topics: [ 1, 2, 3, 4 ]
   }, {
     id: 2,
-    title: 'examples',
+    title: 'programs',
     topics: [5, 6, 7]
   }]
 });

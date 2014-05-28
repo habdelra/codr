@@ -67,7 +67,7 @@
   width: 25%;
 }
 
-.module-container.examples .topic {
+.module-container.programs .topic {
   width: 33.33%;
 }
 
@@ -110,6 +110,9 @@
 .control.topic-container .topic-items {
   min-height: 640px;
 }
+.program-1.topic-container .code-snippets {
+  min-height: 770px;
+}
 
 .code-snippets, .topic-items {
   min-height: 600px;
@@ -140,6 +143,13 @@ div.code-snippets {
     display: block;
     margin: 0;
     padding: 0 0 0 25px;
+
+    &.active .image-container {
+      opacity: 1;
+    }
+    .image-container {
+      opacity: 0.4;
+    }
 
     &:first-of-type {
       padding-top: 25px;
@@ -187,6 +197,13 @@ div.code-snippets {
     font-size: 18pt;
     line-height: 23pt;
   }
+  .sub-header {
+    margin-bottom: 10px;
+    color: $blue;
+    font-family: $font-header-style;
+    font-size: 15pt;
+    line-height: 20pt;
+  }
 }
 .code {
   padding: 25px 22px;
@@ -215,7 +232,7 @@ div.code-snippets {
 .scratch-footer {
   width: 249px;
   float:left;
-  .module-container.examples & {
+  .module-container.programs & {
     width: 314px;
   }
 }
