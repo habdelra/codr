@@ -2,10 +2,13 @@
   height: 100%;
   font-family: $font-body-style;
   padding: 20px $app-padding;
+  position:relative;
 }
 
 .header-bar {
   border-bottom: 1px solid $blue;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 
   &:after {
     display: block;
@@ -21,8 +24,8 @@
     cursor: pointer;
     color: $blue;
     display: inline-block;
-    font-size: 32pt;
-    line-height: 46pt;
+    font-size: 25pt;
+    line-height: 29pt;
     .tag {
       font-family: $font-normal-style;
       color: $red;
@@ -31,34 +34,28 @@
       font-family: $font-header-style;
     }
   }
-  .language-menu {
-    float:right;
-    display: inline-block;
-    line-height: 46pt;
-
-    .language {
-      min-width: 125px;
-      color: $blue;
-      padding: 20px 0 0 0;
-      font-size: 18pt;
-      @include nav-menu-buttons;
-    }
-
+  .language {
+    min-width: 125px;
+    color: $blue;
+    padding: 20px 0 0 0;
+    font-size: 17pt;
+    margin-left: 7px;
   }
 }
 
 .module-nav-bar {
-  margin-top: 20px;
-  margin-left: -7px;
+  position:absolute;
+  top: 40px;
+  right: $app-padding;
 }
 
 .module {
-  color: $red;
-  font-size: 18pt;
-  line-height: 25pt;
+  color: $blue;
+  font-size: 14pt;
+  line-height: 14pt;
   @include nav-menu-buttons;
   &:first-of-type {
-    min-width: 185px;
+    min-width: 140px;
   }
 
 }
@@ -67,7 +64,7 @@
   width: 25%;
 }
 
-.module-container.programs .topic {
+.module-container.examples .topic {
   width: 33.33%;
 }
 
@@ -77,8 +74,8 @@
   display: inline-block;
   width: 25%;
   margin-right: -4px;
-  font-size: 18pt;
-  line-height: 25pt;
+  font-size: 14pt;
+  line-height: 21pt;
   border-top: 2px solid $blue;
   border-bottom: 2px solid $blue;
   border-right: 2px solid $blue;
@@ -125,7 +122,6 @@
   .topic-item {
     display:block;
     border-bottom: 1px solid $blue;
-    min-height: 65px;
     padding: 25px;
     &:last-of-type {
       border-bottom: none;
@@ -232,7 +228,7 @@ div.code-snippets {
 .scratch-footer {
   width: 249px;
   float:left;
-  .module-container.programs & {
+  .module-container.examples & {
     width: 314px;
   }
 }
