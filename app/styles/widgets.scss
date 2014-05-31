@@ -89,11 +89,11 @@ ic-modal-main {
 .instruction-container {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s linear;
-  -webkit-transition: max-height 0.5s linear;
-  -moz-transition: max-height 0.5s linear;
+  transition: max-height 0.3s linear;
+  -webkit-transition: max-height 0.3s linear;
+  -moz-transition: max-height 0.3s linear;
 
   &.expand {
-    max-height: 1000px;
+    max-height: 250px;
   }
 }

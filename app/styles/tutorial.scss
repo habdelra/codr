@@ -185,6 +185,12 @@ div.code-snippets {
     margin: 0;
     padding-left: 20px;
   }
+  .name {
+    font-family: $font-header-style;
+  }
+  p {
+    margin-bottom: 0;
+  }
 }
 .header {
   color: $light-red;
