@@ -254,3 +254,13 @@ div.code-snippets {
   line-height: 23pt;
 }
 
+.instructions {
+  background: $lighter-blue-opaque;
+  font-size: 9pt;
+  line-height: 14pt;
+  border-bottom: 1px solid $blue;
+  font-style: italic;
+  padding: 3px 10px;
+  text-align: center;
+}
+

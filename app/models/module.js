@@ -10,7 +10,7 @@ Module.reopenClass({
     topics: [5, 6, 7]
   }, {
     id: 2,
-    title: 'block references',
+    title: 'scratch block references',
     topics: [ 1, 2, 3, 4 ]
   }]
 });
