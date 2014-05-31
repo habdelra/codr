@@ -1,5 +1,4 @@
 .tutorial {
-  height: 100%;
   font-family: $font-body-style;
   padding: 20px $app-padding;
   position:relative;
@@ -98,19 +97,6 @@
   }
 }
 
-.motion.topic-container .topic-items {
-  min-height: 850px;
-}
-.events.topic-container .topic-items {
-  min-height: 580px;
-}
-.control.topic-container .topic-items {
-  min-height: 640px;
-}
-.program-1.topic-container .code-snippets {
-  min-height: 770px;
-}
-
 .code-snippets, .topic-items {
   min-height: 600px;
   background: $lighter-blue;
@@ -190,14 +176,7 @@ div.code-snippets {
   .header {
     color: $light-red;
     font-family: $font-header-style;
-    font-size: 15pt;
-    line-height: 19pt;
-  }
-  .sub-header {
-    margin-bottom: 10px;
-    color: $blue;
-    font-family: $font-header-style;
-    font-size: 15pt;
+    font-size: 13pt;
     line-height: 17pt;
   }
 }
@@ -205,7 +184,7 @@ div.code-snippets {
   padding: 25px 22px;
   color: $dark-gray;
   font-size: 13pt;
-  line-height: 20pt;
+  line-height: 17pt;
   position:relative;
 }
 
@@ -217,7 +196,6 @@ div.code-snippets {
   font-size: 14pt;
   line-height: 21pt;
   border: 2px solid $blue;
-  margin-bottom: $app-padding;
 }
 .codr-footer {
   background: $light-red;
