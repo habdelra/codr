@@ -180,7 +180,7 @@ div.code-snippets {
 .how-it-works {
   padding: 25px 22px;
   font-size: 13pt;
-  line-height: 20pt;
+  line-height: 17pt;
   border-bottom: 1px solid $blue;
 
   ul {
@@ -190,15 +190,15 @@ div.code-snippets {
   .header {
     color: $light-red;
     font-family: $font-header-style;
-    font-size: 18pt;
-    line-height: 23pt;
+    font-size: 15pt;
+    line-height: 19pt;
   }
   .sub-header {
     margin-bottom: 10px;
     color: $blue;
     font-family: $font-header-style;
     font-size: 15pt;
-    line-height: 20pt;
+    line-height: 17pt;
   }
 }
 .code {
@@ -214,8 +214,8 @@ div.code-snippets {
   color: white;
   background: $light-blue-opaque;
   font-family: $font-header-style;
-  font-size: 32pt;
-  line-height: 40pt;
+  font-size: 14pt;
+  line-height: 21pt;
   border: 2px solid $blue;
   margin-bottom: $app-padding;
 }
