@@ -1,6 +1,6 @@
-Welcome to Codr!
+#Welcome to Codr!
 
-## Prerequisistes
+### Prerequisistes
 * Node.js
 * Bower
 
