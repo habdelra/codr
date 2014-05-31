@@ -1,6 +1,6 @@
 .tutorial {
   font-family: $font-body-style;
-  padding: 20px $app-padding;
+  padding: 5px $app-padding 0;
   position:relative;
 }
 
@@ -44,7 +44,7 @@
 
 .module-nav-bar {
   position:absolute;
-  top: 40px;
+  top: 25px;
   right: $app-padding;
 }
 
@@ -64,15 +64,23 @@
 }
 
 .module-container.examples .topic {
-  width: 33.33%;
+  width: 50%;
+}
+
+.topic-nav-bar {
+  &:after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
 }
 
 .topic {
   @include nav-menu-buttons;
   text-align: center;
-  display: inline-block;
+  display: block;
+  float:left;
   width: 25%;
-  margin-right: -4px;
   font-size: 14pt;
   line-height: 21pt;
   border-top: 2px solid $blue;
@@ -84,7 +92,7 @@
     background: $blue;
   }
   &:first-of-type {
-    border-left: 2px solid $blue;
+   border-left: 2px solid $blue;
   }
 }
 
@@ -181,7 +189,7 @@ div.code-snippets {
   }
 }
 .code {
-  padding: 25px 22px;
+  padding: 25px 22px 0;
   color: $dark-gray;
   font-size: 13pt;
   line-height: 17pt;

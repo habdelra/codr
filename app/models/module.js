@@ -7,7 +7,7 @@ Module.reopenClass({
   FIXTURES: [{
     id: 1,
     title: 'examples',
-    topics: [5, 6, 7]
+    topics: [5, 6]
   }, {
     id: 2,
     title: 'scratch block references',
