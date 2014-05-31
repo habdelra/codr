@@ -31,17 +31,17 @@ Topic.reopenClass({
   }, {
     id: 5,
     type: types.CODE_SNIPPETS,
-    title: 'program 1',
+    title: 'example 1',
     codeSnippets: [1, 11, 2, 3, 4, 5, 6, 8, 7, 9, 10]
   }, {
     id: 6,
     type: types.CODE_SNIPPETS,
-    title: 'program 2',
+    title: 'example 2',
     codeSnippets: [9999]
   }, {
     id: 7,
     type: types.CODE_SNIPPETS,
-    title: 'program 3',
+    title: 'example 3',
     codeSnippets: [9999]
   }]
 });
