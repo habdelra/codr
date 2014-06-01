@@ -1,5 +1,14 @@
+.home {
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
 
 .title-container {
+  cursor: pointer;
+  float: left;
   padding: $app-padding;
   text-align: center;
 
@@ -21,6 +30,7 @@
 }
 
 .intro-container {
+  float: left;
   position: relative;
   padding: $app-padding;
   font-size: 39pt;
