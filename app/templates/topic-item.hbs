@@ -19,20 +19,19 @@
               Try it out
             {{/ic-modal-trigger}}
           </div>
-
-          {{#ic-modal id="try-it"}}
-            {{#ic-modal-title}}
-              <span class="try-it-title">
-                <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
-              </span>
-            {{/ic-modal-title}}
-            {{view 'topic-item-lab-frame'}}
-            <button class="revert" {{ action revert }}>Undo your changes</button>
-          {{/ic-modal}}
         {{/if}}
 
         {{ partial topicItem.examplePartial }}
       </div>
     </div>
   </div>
+  {{#ic-modal id="try-it"}}
+    {{#ic-modal-title}}
+      <span class="try-it-title">
+        <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
+      </span>
+    {{/ic-modal-title}}
+      {{view 'topic-item-lab-frame'}}
+      <button class="revert" {{ action revert }}>Undo your changes</button>
+  {{/ic-modal}}
 </div>
