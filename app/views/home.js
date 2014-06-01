@@ -1,4 +1,5 @@
-export default Ember.View.extend({
+export
+default Ember.View.extend({
   classNames: ['home'],
 
   init: function() {
@@ -19,7 +20,6 @@ export default Ember.View.extend({
   },
 
   didInsertElement: function() {
-    var _this = this;
     var $window = $(window);
     var $titleContainer = this.$().find('.title-container');
     var topPadding = parseInt($titleContainer.css('padding-top').replace('px', ''), 10);
@@ -38,13 +38,14 @@ export default Ember.View.extend({
       'margin-top': (windowHeight / 2) - (titleHeight / 2)
     });
     this.$().css({
-      width: (2 * windowWidth) +  (2 * leftPadding) + rightPadding - 10
+      width: (2 * windowWidth) + (2 * leftPadding) + rightPadding - 10
     });
+  },
 
-    $titleContainer.unbind('click').click(function(){
-      $('body').animate({
-        scrollLeft: _this.$().find('.intro-container').offset().left
-      });
+  click: function() {
+    var _this = this;
+    $('body').animate({
+      scrollLeft: _this.$().find('.intro-container').offset().left
     });
   }
 });

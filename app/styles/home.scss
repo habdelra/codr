@@ -7,12 +7,12 @@
 }
 
 .title-container {
-  cursor: pointer;
   float: left;
   padding: $app-padding;
   text-align: center;
 
   .title {
+    cursor: pointer;
     font-family: $font-header-style;
     font-size: 160pt;
   }
