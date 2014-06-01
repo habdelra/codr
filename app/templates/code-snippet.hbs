@@ -30,6 +30,7 @@
               </span>
             {{/ic-modal-title}}
             {{view 'code-snippet-lab-frame'}}
+            <button class="revert" {{ action revert }}>Undo your changes</button>
           {{/ic-modal}}
         {{/if}}
       </div>
@@ -41,7 +42,6 @@
         </div>
       {{else}}
         {{#if codeSnippet.labUrl}}
-          <div class="jsbin-edit-mask"></div>
           {{view 'eval-snippet-frame'}}
         {{/if}}
       {{/if}}

@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
 
   runUrl: function(){
     if (!this.get('codeSnippet.labUrl')) return;
-    return this.get('codeSnippet.labUrl').replace(/\/embed.*/, '');
+    return this.get('codeSnippet.labUrl').replace(/\/edit.*/, '/quiet');
   }.property('codeSnippet.labUrl'),
 
   actions: {
@@ -29,6 +29,9 @@ export default Ember.Controller.extend({
     triggerReload: function(){
       this.set('showingCode', false);
       this.set('reloadExample', !!!this.get('reloadExample'));
+    },
+    revert: function(){
+      this.set('reloadLab', !!!this.get('reloadLab'));
     }
   }
 });

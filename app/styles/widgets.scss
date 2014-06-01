@@ -48,7 +48,12 @@ ic-modal {
 }
 
 ic-modal-main {
-  margin-top: 120px;
+  margin-top: 100px;
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
 }
 
 .try-it-title {
@@ -112,4 +117,18 @@ ic-modal-main {
   width: 20px;
   height: 32px;
   text-indent: -9999px;
+}
+
+.revert {
+  float: right;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: 1px solid $blue;
+  color: $light-red;
+  font-family: $font-body-style;
+  font-size: 13pt;
+  line-height: 15pt;
+  padding: 3px 40px;
+  margin: 10px 0 0;
 }
