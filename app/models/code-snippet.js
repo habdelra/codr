@@ -4,7 +4,8 @@ var CodeSnippet = DS.Model.extend({
   imageStyle: DS.attr('string'),
   examplePartial: DS.attr('string'),
   instructionPartial: DS.attr('string'),
-  labUrl: DS.attr('string')
+  labUrl: DS.attr('string'),
+  containedSnippets: DS.hasMany('code-snippet')
 });
 
 CodeSnippet.reopenClass({
@@ -25,7 +26,7 @@ CodeSnippet.reopenClass({
     id: 2,
     title: 'Point in direction 90 Scratch Block',
     instructionPartial: 'content/code-snippets/example1-point',
-    examplePartial: 'content/code-snippets/example1-all',
+    examplePartial: 'content/code-snippets/example1-snippet10',
     imageUrl: 'images/Scratch_examples/Example1_IndivBlocks_01.png',
     imageStyle: 'width:140px; height:31px|margin-top:-12px; margin-left:-1px',
     labUrl: 'http://jsbin.com/ficewami/4/embed?js,output'
@@ -49,7 +50,7 @@ CodeSnippet.reopenClass({
     id: 5,
     title: 'Go to 0,0 Scratch Block',
     instructionPartial: 'content/code_snippets/example1-goto',
-    examplePartial: 'content/code-snippets/example1-all',
+    examplePartial: 'content/code-snippets/example1-snippet11',
     imageUrl: 'images/Scratch_examples/Example1_IndivBlocks_04.png',
     imageStyle: 'width:108px; height:31px|margin-top:-10px; margin-left:-3px',
     labUrl: 'http://jsbin.com/ficewami/4/embed?js,output'
@@ -60,7 +61,8 @@ CodeSnippet.reopenClass({
     examplePartial: 'content/code-snippets/example1-snippet4',
     imageUrl: 'images/Scratch_examples/Example1_IndivBlocks_09.png',
     imageStyle: 'height:136px; width:88px;|margin-top:-8px; margin-left:-2px',
-    labUrl: 'http://jsbin.com/ficewami/4/embed?js,output'
+    labUrl: 'http://jsbin.com/ficewami/4/embed?js,output',
+    containedSnippets: [7, 8, 9, 10]
   }, {
     id: 7,
     title: 'Glide right Scratch Block',
@@ -97,7 +99,7 @@ CodeSnippet.reopenClass({
     id: 11,
     title: 'Show Scratch Block',
     instructionPartial: 'content/code-snippets/example1-show',
-    examplePartial: 'content/code-snippets/example1-all',
+    examplePartial: 'content/code-snippets/example1-snippet9',
     imageUrl: 'images/Scratch_blocks/show-block.png',
     imageStyle: 'height:34px; width:50px;|margin-top:-7px; margin-left:-5px',
     labUrl: 'http://jsbin.com/ficewami/4/embed?js,output'

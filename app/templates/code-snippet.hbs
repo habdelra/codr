@@ -3,36 +3,36 @@
   <div class="instructions">Click Scratch blocks for section in javascript code</div>
     {{#each snippet in codeSnippets }}
       {{#link-to 'code-snippet' snippet class="code-snippet"}}
-        {{image-list snippet}}
+        {{image-list codeSnippet snippet}}
       {{/link-to}}
     {{/each}}
   </div>
   <div class="stage">
-    
     <div class="how-it-works">
       <div class="header">{{codeSnippet.title}}</div>
       <div {{ bind-attr class="showInstructionDetail:expand :instruction-container"}}>
         {{ partial codeSnippet.instructionPartial }}
       </div>
       <button {{bind-attr class="showInstructionDetail:expand :detail-btn" }} {{ action "toggleDetail" }}>{{toggleDetailLabel}}</button>
+        {{#if codeSnippet.labUrl}}
+          {{#ic-modal-trigger controls="try-it" class="try-it-button"}}
+            Try it out
+          {{/ic-modal-trigger}}
+
+          {{#ic-modal id="try-it"}}
+            {{#ic-modal-title}}
+              <span class="try-it-title">
+                <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
+              </span>
+            {{/ic-modal-title}}
+            {{view 'code-snippet-lab-frame'}}
+          {{/ic-modal}}
+        {{/if}}
     </div>
-    <div class="code">
-      {{#if codeSnippet.labUrl}}
-        {{#ic-modal-trigger controls="try-it" class="try-it-button"}}
-          Try it out
-        {{/ic-modal-trigger}}
-
-        {{#ic-modal id="try-it"}}
-          {{#ic-modal-title}}
-            <span class="try-it-title">
-              <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
-            </span>
-          {{/ic-modal-title}}
-          {{view 'code-snippet-lab-frame'}}
-        {{/ic-modal}}
-      {{/if}}
-
-      {{ partial codeSnippet.examplePartial }}
+    <div class="code-container">
+      <div class="code">
+        {{ partial codeSnippet.examplePartial }}
+      </div>
     </div>
   </div>
 </div>

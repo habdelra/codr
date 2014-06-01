@@ -98,6 +98,8 @@
 
 .tutorial-container {
   border-right: 1px solid $blue;
+  height:600px;
+  overflow:hidden;
   &:after {
     display: block;
     content: '';
@@ -134,7 +136,8 @@ div.code-snippets {
     margin: 0;
     padding: 0 0 0 25px;
 
-    &.active .image-container {
+    &.active .image-container,
+    .contained.image-container {
       opacity: 1;
     }
     .image-container {
@@ -198,12 +201,17 @@ div.code-snippets {
   font-size: 13pt;
   line-height: 17pt;
 }
+.code-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height:502px;
+}
+
 .code {
-  padding: 25px 22px 0;
+  padding: 25px 22px;
   color: $dark-gray;
   font-size: 13pt;
   line-height: 17pt;
-  position:relative;
 }
 
 .codr-footer, .scratch-footer {
@@ -237,11 +245,11 @@ div.code-snippets {
 .try-it-button {
   cursor: pointer;
   outline: none;
-  background: none;
+  background: white;
   border: 1px solid $blue;
   margin: 0;
   padding: 0 20px;
-  top: -1px;
+  bottom: -32px;
   right: -1px;
   position:absolute;
   color: $light-red;
@@ -257,6 +265,5 @@ div.code-snippets {
   border-bottom: 1px solid $blue;
   font-style: italic;
   padding: 6px 10px;
-  text-align: center;
 }
 

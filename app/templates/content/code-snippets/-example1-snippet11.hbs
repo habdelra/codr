@@ -1,7 +1,11 @@
 <pre>
 $(document).ready(function() {
   // The CSS is responsible for showing sprite
+</pre>
+<pre class="highlight">
   // The CSS is responsible for setting location
+</pre>
+<pre>
   // No need to set a direction for sprite movement
   var $sprite = $('.sprite');
   var xOffset = $sprite.position().left;
@@ -9,11 +13,7 @@ $(document).ready(function() {
   var i;
   for (i = 0; i < 4; i++) {
     xOffset += 50;
-</pre>
-<pre class="highlight">
     yOffset -= 50;
-</pre>
-<pre>
     $sprite.animate({
       left: xOffset
     })

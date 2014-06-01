@@ -1,15 +1,16 @@
-export default Ember.Handlebars.makeBoundHelper(function(item){
+export default Ember.Handlebars.makeBoundHelper(function(itemForRoute, item){
   if (!item.get('imageUrl')) return;
-
+  var containedSnippets = itemForRoute.get('containedSnippets');
+  var itemIsContained = containedSnippets.get('length') && containedSnippets.indexOf(item) > -1;
   var imageUrls = item.get('imageUrl').split('|');
   var imageStyle = (item.get('imageStyle') || '').split('|');
   var imageHtml = '';
   var i;
   var style;
   if (imageStyle.length > imageUrls.length) {
-    imageHtml += '<div class="image-container" style="' + imageStyle[imageUrls.length] + '">';
+    imageHtml += '<div class="image-container ' + (itemIsContained ? 'contained' : '') + '" style="' + imageStyle[imageUrls.length] + '">';
   } else {
-    imageHtml += '<div class="image-container">';
+    imageHtml += '<div class="image-container ' + (itemIsContained ? 'contained' : '') + '">';
   }
   for (i = 0; i < imageUrls.length; i++){
     style = null;
