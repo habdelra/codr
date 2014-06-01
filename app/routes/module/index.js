@@ -1,5 +1,3 @@
-export default Ember.Route.extend({
-  afterModel: function(){
-    this.transitionTo('topics');
-  }
-});
+import ModuleRoute from 'codr/routes/module';
+
+export default ModuleRoute.extend();

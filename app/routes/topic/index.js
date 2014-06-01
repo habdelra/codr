@@ -1,11 +1,3 @@
-import types from 'codr/utils/topic-types';
+import TopicRoute from 'codr/routes/topic';
 
-export default Ember.Route.extend({
-  afterModel: function(model) {
-    if (model.get('type') === types.TOPIC_ITEMS) {
-      this.transitionTo('topic-items');
-    } else if (model.get('type') === types.CODE_SNIPPETS) {
-      this.transitionTo('code-snippets');
-    }
-  }
-});
+export default TopicRoute.extend();
