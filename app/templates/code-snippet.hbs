@@ -3,7 +3,7 @@
   <div class="instructions">Click Scratch blocks for section in javascript code</div>
     {{#each snippet in codeSnippets }}
       {{#link-to 'code-snippet' snippet class="code-snippet"}}
-        {{image-list codeSnippet snippet}}
+        {{image-list snippet codeSnippet}}
       {{/link-to}}
     {{/each}}
   </div>
