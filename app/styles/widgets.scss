@@ -50,6 +50,7 @@ ic-modal {
 
 ic-modal-main {
   margin-top: 100px;
+  padding: 20px 20px 50px;
   &:after {
     content: ' ';
     display: block;
@@ -121,15 +122,16 @@ ic-modal-main {
 }
 
 .revert {
-  float: right;
+  position:absolute;
+  left: 50%;
   outline: none;
   cursor: pointer;
-  background: none;
+  background-color: white;
   border: 1px solid $blue;
-  color: $light-red;
+  color: $blue;
   font-family: $font-body-style;
   font-size: 13pt;
   line-height: 15pt;
   padding: 3px 40px;
-  margin: 10px 0 0;
+  margin: 10px 0 0 -113px;
 }
