@@ -202,13 +202,15 @@ div.code-snippets {
   line-height: 17pt;
 }
 .code-container {
+  position: relative;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   max-height:502px;
+
 }
 
 .code {
-  padding: 25px 22px;
+  padding: 40px 22px 25px;
   color: $dark-gray;
   font-size: 13pt;
   line-height: 17pt;
@@ -242,20 +244,51 @@ div.code-snippets {
   margin-bottom: -3px;
 }
 
-.try-it-button {
-  cursor: pointer;
-  outline: none;
-  background: white;
-  border: 1px solid $blue;
-  margin: 0;
-  padding: 0 20px;
+.code-buttons {
+  z-index: 1;
+  position:absolute;
   bottom: -32px;
   right: -1px;
-  position:absolute;
+  &:after {
+    content: ' ';
+    clear: both;
+    display: block;
+  }
+}
+
+.code-button {
+  display: block;
+  float:left;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  border: 1px solid $blue;
+  border-right: none;
+  margin: 0;
+  padding: 0 10px;
   color: $light-red;
-  font-family: $font-header-style;
+  font-family: $font-body-style;
   font-size: 13pt;
   line-height: 23pt;
+  &:first-of-type {
+    min-width: 94px;
+    padding: 0 10pxx;
+   // min-width: 110px;
+  }
+  &:nth-of-type(3) {
+    min-width: 125px;
+  }
+
+  &.reload {
+    padding: 0 14px;
+    min-width: inherit;
+    border-left: none;
+  }
+
+  &.active {
+    cursor: default;
+    font-family: $font-header-style;
+  }
 }
 
 .instructions {
@@ -265,5 +298,14 @@ div.code-snippets {
   border-bottom: 1px solid $blue;
   font-style: italic;
   padding: 6px 10px;
+}
+
+.jsbin-edit-mask {
+  background: white;
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  top: 32px;
 }
 

@@ -11,9 +11,24 @@ export default Ember.Controller.extend({
     }
   }.property('showInstructionDetail'),
 
+  runUrl: function(){
+    if (!this.get('codeSnippet.labUrl')) return;
+    return this.get('codeSnippet.labUrl').replace(/\/embed.*/, '');
+  }.property('codeSnippet.labUrl'),
+
   actions: {
     toggleDetail: function(){
       this.set('showInstructionDetail', !!!this.get('showInstructionDetail'));
+    },
+    viewCode: function(){
+      this.set('showingCode', true);
+    },
+    viewExample: function(){
+      this.set('showingCode', false);
+    },
+    triggerReload: function(){
+      this.set('showingCode', false);
+      this.set('reloadExample', !!!this.get('reloadExample'));
     }
   }
 });

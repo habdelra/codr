@@ -1,6 +1,6 @@
 <div class="tutorial-container code-snippets-topic-type">
   <div class="code-snippets">
-  <div class="instructions">Click Scratch blocks for section in javascript code</div>
+    <div class="instructions">Click Scratch blocks for section in javascript code</div>
     {{#each snippet in codeSnippets }}
       {{#link-to 'code-snippet' snippet class="code-snippet"}}
         {{image-list snippet codeSnippet}}
@@ -14,8 +14,12 @@
         {{ partial codeSnippet.instructionPartial }}
       </div>
       <button {{bind-attr class="showInstructionDetail:expand :detail-btn" }} {{ action "toggleDetail" }}>{{toggleDetailLabel}}</button>
+      <div class="code-buttons">
         {{#if codeSnippet.labUrl}}
-          {{#ic-modal-trigger controls="try-it" class="try-it-button"}}
+          <button {{ bind-attr class="showingCode::active :code-button" }} {{ action 'viewExample' }}>See it run</button>
+          <button {{ action 'triggerReload' }} class="code-button reload">Reload Example</button>
+          <button {{ bind-attr class="showingCode:active :code-button" }} {{ action 'viewCode' }}>View the code</button>
+          {{#ic-modal-trigger controls="try-it" class="code-button"}}
             Try it out
           {{/ic-modal-trigger}}
 
@@ -28,11 +32,19 @@
             {{view 'code-snippet-lab-frame'}}
           {{/ic-modal}}
         {{/if}}
+      </div>
     </div>
     <div class="code-container">
-      <div class="code">
-        {{ partial codeSnippet.examplePartial }}
-      </div>
+      {{#if showingCode }}
+        <div class="code">
+          {{ partial codeSnippet.examplePartial }}
+        </div>
+      {{else}}
+        {{#if codeSnippet.labUrl}}
+          <div class="jsbin-edit-mask"></div>
+          {{view 'eval-snippet-frame'}}
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 </div>
