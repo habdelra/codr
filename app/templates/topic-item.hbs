@@ -11,23 +11,27 @@
     <div class="how-it-works">
       {{ partial topicItem.instructionPartial }}
     </div>
-    <div class="code">
-      {{#if topicItem.labUrl}}
-        {{#ic-modal-trigger controls="try-it" class="try-it-button"}}
-          Try it out
-        {{/ic-modal-trigger}}
+    <div class="code-container">
+      <div class="code">
+        {{#if topicItem.labUrl}}
+          <div class="code-buttons">
+            {{#ic-modal-trigger controls="try-it" class="code-button"}}
+              Try it out
+            {{/ic-modal-trigger}}
+          </div>
 
-        {{#ic-modal id="try-it"}}
-          {{#ic-modal-title}}
-            <span class="try-it-title">
-              <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
-            </span>
-          {{/ic-modal-title}}
-          {{view 'topic-item-lab-frame'}}
-        {{/ic-modal}}
-      {{/if}}
+          {{#ic-modal id="try-it"}}
+            {{#ic-modal-title}}
+              <span class="try-it-title">
+                <span class="tag">&lt;</span><span class="name">codr</span><span class="text">lab</span><span class="tag">&gt;</span>
+              </span>
+            {{/ic-modal-title}}
+            {{view 'topic-item-lab-frame'}}
+          {{/ic-modal}}
+        {{/if}}
 
-      {{ partial topicItem.examplePartial }}
+        {{ partial topicItem.examplePartial }}
+      </div>
     </div>
   </div>
 </div>

@@ -64,7 +64,7 @@
 }
 
 .module-container.examples .topic {
-  width: 50%;
+  width: 33.33%;
 }
 
 .topic-nav-bar {
@@ -247,33 +247,41 @@ div.code-snippets {
 .code-buttons {
   z-index: 1;
   position:absolute;
-  bottom: -32px;
+  bottom: -34px;
   right: -1px;
+  border-bottom: 1px solid $blue;
+  border-top: 1px solid $blue;
   &:after {
     content: ' ';
     clear: both;
     display: block;
   }
+  .topic-items-topic-type & {
+    z-index: 0;
+    top: -1px;
+    bottom: inherit;
+  }
 }
 
 .code-button {
+  height:32px;
   display: block;
   float:left;
   cursor: pointer;
   outline: none;
   background-color: white;
-  border: 1px solid $blue;
+  border-left: 1px solid $blue;
   border-right: none;
+  border-top: none;
+  border-bottom: none;
   margin: 0;
   padding: 0 10px;
   color: $light-red;
   font-family: $font-body-style;
   font-size: 13pt;
-  line-height: 23pt;
   &:first-of-type {
     min-width: 94px;
     padding: 0 10pxx;
-   // min-width: 110px;
   }
   &:nth-of-type(3) {
     min-width: 125px;

@@ -2,6 +2,7 @@
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   text-decoration: none;
   margin:0;
   outline: none;
@@ -106,7 +107,7 @@ ic-modal-main {
 }
 
 .reload {
-  background: url('../images/refresh.png') no-repeat 0 5px;
+  background: url('../images/refresh.png') no-repeat 0 7px;
   cursor: pointer;
   width: 20px;
   height: 32px;

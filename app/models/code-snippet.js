@@ -11,7 +11,7 @@ var CodeSnippet = DS.Model.extend({
 CodeSnippet.reopenClass({
   FIXTURES: [{
     id: 9999,
-    title: 'missing content',
+    title: '(Content not yet loaded)',
     instructionPartial: 'content/todo',
     examplePartial: 'content/todo',
     imageUrl: 'images/Scratch_blocks/Events/2.0_When_Green_Flag_Clicked.png'
