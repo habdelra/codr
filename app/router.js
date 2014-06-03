@@ -6,6 +6,8 @@ Router.map(function() {
   this.route('home');
   this.resource('quiz', { path: '/quiz' }, function(){
     this.route('question1');
+    this.route('question2');
+    this.route('question3');
     this.route('result');
   });
   //TODO: convert the javascript resource to a generic language resource
