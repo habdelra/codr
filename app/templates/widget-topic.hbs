@@ -1,0 +1,28 @@
+<div class="widget">
+  <div class="heading">
+    {{partial 'codr-logo'}}
+    <span class="widget-name">scratch reference guide</span>
+  </div>
+  <div class="language-menu">
+    <button class="language">Javascript</button>
+    <button class="language">Python</button>
+    <button class="language">Processing</button>
+  </div>
+  <div class="block-container">
+    <div class="img-container">
+      {{image-list currentTopicItem}}
+      <div class="pager">
+        <button {{action 'prevTopicItem'}}>Previous</button>
+        <span class="current-item">{{currentTopicItemSequenceNumber}}</span>
+        <span class="total-items">/{{topic.topicItems.length}}</span>
+        <button {{action 'nextTopicItem'}}>Next</button>
+      </div>
+    </div>
+    <div class="topic-nav-bar">
+      {{#each topics}}
+      {{#link-to 'widget-topic' this class="topic"}}{{title}}{{/link-to}}
+      {{/each}}
+    </div>
+  </div>
+  {{outlet}}
+</div>

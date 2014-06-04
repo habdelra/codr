@@ -1,5 +1,5 @@
 export default Ember.Handlebars.makeBoundHelper(function(item, itemForRoute) {
-  if (!item.get('imageUrl')) return;
+  if (!item || !item.get('imageUrl')) return;
   var containedSnippets;
   var itemIsContained;
   var imageUrls = item.get('imageUrl').split('|');

@@ -4,8 +4,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home');
-  this.resource('quiz', { path: '/quiz' }, function(){
     this.route('question1');
+  this.resource('quiz', { path: '/quiz' }, function(){
     this.route('question2');
     this.route('question3');
     this.route('result');
@@ -24,6 +24,15 @@ Router.map(function() {
             });
           });
         });
+      });
+    });
+  });
+
+
+  this.resource('widget-topics', { path: '/widget' }, function(){
+    this.resource('widget-topic', { path: '/:topic_id' }, function(){
+      this.resource('widget-topic-items', { path: '/topic-items' }, function(){
+        this.resource('widget-topic-item', { path: '/:topic_item_id' });
       });
     });
   });
