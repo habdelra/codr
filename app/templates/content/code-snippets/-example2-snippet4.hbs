@@ -1,0 +1,34 @@
+<pre>
+$(document).ready(function(){
+  // The CSS is responsible for showing sprite
+</pre>
+<pre class="highlight">
+  // The CSS is responsible for setting location
+</pre>
+<pre>
+  // No need to set a direction for sprite movement
+  var isMoving = true;
+  var $sprite = $('.sprite');
+
+  var switchCostume = function(){
+    setTimeout(function(){
+      if ($sprite.hasClass('costume-next')){
+        $sprite.removeClass('costume-next');
+      } else {
+        $sprite.addClass('costume-next');
+      }
+      if (isMoving) {
+        switchCostume();
+      }
+    }, 200);
+  };
+
+  $sprite.animate({
+    left: 300
+  }, 3 * 1000, 'linear', function(){
+    isMoving = false;
+  });
+
+  switchCostume();
+});
+</pre>

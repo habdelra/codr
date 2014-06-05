@@ -1,0 +1,9 @@
+<div>
+  In Scratch we use a "Repeat Until" block to repeat all the blocks that are inside the "Repeat Until" block. These blocks
+  keep repeating until the variable "is-moving" is set to 0 (which in our case means that the sprite is no longer moving).
+  In JavaScript we can accomplish this using a useful strategy called "recursion". In our example, the switchCostume function is called
+  again <i>from inside itself</i>. JavaScript doesn't have a problem executing a function when it is already inside that same function. This is kind of like
+  pointing two mirrors at each other and seeing your reflection repeating over and over again. When we use recursion, it is important to
+  tell JavaScript when it should stop calling itself--otherwise it will keep repeating forever. We tell the function that it can stop calling
+  itself by using the "if" statement to check and see if the "isMoving" variable is false, meaning that the sprite has stopped moving.
+</div>
