@@ -7,5 +7,11 @@ export default TopicItemController.extend({
 
   setCurrentTopicItem: Ember.observer('model', function(){
     this.get('topicController').set('currentTopicItem', this.get('model'));
-  }).on('init')
+  }).on('init'),
+
+  actions: {
+    toggleCodeDisplay: function(){
+      this.set('codeDisplay', !!!this.get('codeDisplay'));
+    }
+  }
 });

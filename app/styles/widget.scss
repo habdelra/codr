@@ -75,6 +75,7 @@
         border-right: none;
         border-top: none;
         border-left: 2px solid $blue;
+        background: $lighter-blue;
         padding: 5px 30px;
         float: none;
         width: inherit;
@@ -82,6 +83,9 @@
 
         &:last-of-type {
           border-bottom: none;
+        }
+        &.active {
+          background: $blue;
         }
       }
     }
@@ -129,7 +133,37 @@
     }
   }
 
-  .detail-btn {
-    display: none;
+  .detail-button-container {
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+  }
+
+  .item-detail-btn {
+    float: left;
+    border: none;
+    color: white;
+    padding: 5px 0;
+    margin: 0;
+    background: $lighter-blue;
+    width: 50%;
+    font-size: 15pt;
+    line-height: 20pt;
+    outline: none;
+    font-family: $font-body-style;
+    cursor: pointer;
+
+    &.selected {
+      font-family: $font-header-style;
+      background: $blue;
+      cursor: default;
+    }
+    &:last-of-type {
+      border-left: 2px solid $blue;
+    }
   }
 }

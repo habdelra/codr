@@ -1,10 +1,15 @@
-<button class="detail-btn">how it works</button>
-<button class="detail-btn">code</button>
+<div class="detail-button-container">
+  <button {{action 'toggleCodeDisplay'}} {{bind-attr class="codeDisplay::selected :item-detail-btn"}}>how it works</button>
+  <button {{action 'toggleCodeDisplay'}} {{bind-attr class="codeDisplay:selected :item-detail-btn"}}>code</button>
+</div>
 <div class="widget-stage">
-  <div class="how-it-works">
-    {{ partial topicItem.instructionPartial }}
-  </div>
+  {{#if codeDisplay}}
   <div class="code">
     {{ partial topicItem.examplePartial }}
   </div>
+  {{else}}
+  <div class="how-it-works">
+    {{ partial topicItem.instructionPartial }}
+  </div>
+  {{/if}}
 </div>
