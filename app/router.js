@@ -4,8 +4,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home');
-    this.route('question1');
   this.resource('quiz', { path: '/quiz' }, function(){
+    this.route('question1');
     this.route('question2');
     this.route('question3');
     this.route('result');
