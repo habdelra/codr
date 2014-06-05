@@ -26,7 +26,7 @@ export default Ember.Handlebars.makeBoundHelper(function(item, itemForRoute) {
     } else {
       imageHtml += '<img class="scratch-img-step" src="' + imageUrls[i] + '" alt="' + item.get('title') + ' (step ' + i + ')"/>';
     }
-    imageHtml += '</div>';
   }
+  imageHtml += '</div>';
   return new Ember.Handlebars.SafeString(imageHtml);
 });

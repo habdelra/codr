@@ -1,0 +1,135 @@
+.widget {
+  margin: 50px;
+  width: 400px;
+  border: 2px solid $blue;
+
+  .logo {
+    font-size: 25pt;
+  }
+  .tag {
+    color: $red;
+    font-family: $font-normal-style;
+  }
+  .name {
+    font-family: $font-header-style;
+  }
+
+  .heading {
+    font-size: 17pt;
+    line-height: 35pt;
+    padding: 5px 10px;
+  }
+
+  .language-menu {
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+
+    .language {
+      @include nav-menu-buttons;
+      font-family: $font-body-style;
+      color: $blue;
+      background-color: white;
+      font-size: 15pt;
+      line-height: 20pt;
+      width: 33.33%;
+      margin: 0;
+      padding: 3px 0;
+      display: block;
+      float: left;
+      border-right: 2px solid $blue;
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+      &.selected {
+        background-color: $lighter-blue;
+        font-family: $font-header-style;
+        cursor: default;
+      }
+    }
+    &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+  }
+
+  .block-container {
+    margin: 20px 0;
+    border-top: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    position: relative;
+
+    .img-container {
+      float: left;
+      margin: 30px 0px 30px 40px;
+    }
+    .topic-nav-bar {
+      float: right;
+
+      .topic {
+        font-size: 15pt;
+        line-height: 20pt;
+        width: 33.33%;
+        border-right: none;
+        border-top: none;
+        border-left: 2px solid $blue;
+        padding: 5px 30px;
+        float: none;
+        width: inherit;
+        min-width: 150px;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+    }
+    &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+  }
+
+  .pager {
+    position:absolute;
+    bottom: 10px;
+    left: 35px;
+    font-size: 15pt;
+
+    .current-item-container {
+      display: inline-block;
+      margin: 0 50px;
+    }
+    .current-item {
+      font-family: $font-header-style;
+    }
+  }
+
+  .pager-btn {
+    text-indent: 9999px;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    outline: none;
+
+    &.next-btn {
+      border-right: 10px solid $blue;
+      border-left: 10px solid transparent;
+    }
+    &.prev-btn {
+      border-left: 10px solid $blue;
+      border-right: 10px solid transparent;
+    }
+  }
+
+  .detail-btn {
+    display: none;
+  }
+}

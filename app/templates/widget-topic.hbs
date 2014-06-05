@@ -1,10 +1,12 @@
 <div class="widget">
   <div class="heading">
-    {{partial 'codr-logo'}}
+    <span class="logo">
+      {{partial 'codr-logo'}}
+    </span>
     <span class="widget-name">scratch reference guide</span>
   </div>
   <div class="language-menu">
-    <button class="language">Javascript</button>
+    <button class="language selected">Javascript</button>
     <button class="language">Python</button>
     <button class="language">Processing</button>
   </div>
@@ -12,10 +14,11 @@
     <div class="img-container">
       {{image-list currentTopicItem}}
       <div class="pager">
-        <button {{action 'prevTopicItem'}}>Previous</button>
-        <span class="current-item">{{currentTopicItemSequenceNumber}}</span>
-        <span class="total-items">/{{topic.topicItems.length}}</span>
-        <button {{action 'nextTopicItem'}}>Next</button>
+        <button {{action 'prevTopicItem'}} class="next-btn pager-btn">Previous</button>
+        <div class="current-item-container">
+          <span class="current-item">{{currentTopicItemSequenceNumber}}</span><span class="total-items">/{{topic.topicItems.length}}</span>
+        </div>
+        <button {{action 'nextTopicItem'}} class="prev-btn pager-btn">Next</button>
       </div>
     </div>
     <div class="topic-nav-bar">
