@@ -53,3 +53,22 @@
   }
 }
 
+.twitter {
+  opacity: .2;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -80px;
+  height: 40px;
+  width: 170px;
+  background: url('/images/twitter.png') no-repeat 0px 4px;
+  text-align: center;
+
+  a {
+    line-height: 34px;
+    font-size: 16pt;
+    font-family: $font-header-style;
+    color: black;
+    text-decoration: none;
+  }
+}
