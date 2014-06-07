@@ -16,7 +16,7 @@
 ### Install codr
 
 * `git clone git@github.com:habdelra/codr.git`
-* `cd connect-paam`
+* `cd codr`
 * `npm install`
 * `bower install`
 * `npm link ember-cli`
