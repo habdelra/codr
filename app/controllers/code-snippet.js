@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Controller.extend({
   needs: ['code-snippets', 'topic'],
   showInstructionDetail: true,
@@ -13,7 +15,7 @@ export default Ember.Controller.extend({
   }.property('showInstructionDetail'),
 
   runUrl: function(){
-    if (!this.get('codeSnippet.labUrl')) return;
+    if (!this.get('codeSnippet.labUrl'))  { return; }
     return this.get('codeSnippet.labUrl').replace(/\/edit.*/, '/quiet');
   }.property('codeSnippet.labUrl'),
 

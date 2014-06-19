@@ -9,15 +9,18 @@
 
     {{BASE_TAG}}
 
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/codr.css">
   </head>
   <body>
     <script>
-      window.ENV = {{ENV}};
+      window.CodrENV = {{ENV}};
+      window.EmberENV = window.CodrENV.EmberENV;
     </script>
-    <script src="assets/app.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/codr.js"></script>
     <script>
-      window.Codr = require('codr/app')['default'].create(ENV.APP);
+      window.Codr = require('codr/app')['default'].create(CodrENV.APP);
       window.Codr.ApplicationAdapter = DS.FixtureAdapter;
     </script>
   </body>

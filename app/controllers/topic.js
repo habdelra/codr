@@ -1,3 +1,4 @@
+import Ember from 'ember';
 export default Ember.Controller.extend({
   topicsController: Ember.computed.alias('controllers.topics'),
   needs: ['topics'],

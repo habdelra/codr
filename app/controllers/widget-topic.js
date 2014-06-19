@@ -1,4 +1,5 @@
 import TopicController from './topic';
+import Ember from 'ember';
 
 export default TopicController.extend({
   needs: ['widget-topics'],
